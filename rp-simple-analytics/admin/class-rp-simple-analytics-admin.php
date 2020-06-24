@@ -92,8 +92,8 @@ class RP_Simple_Analytics_Admin {
 	*/
 	public function add_settings_page( ) {
 		add_options_page(
-			__( 'Simple Analytics Integration by Refined Practice', 'rp-simple-analytics' ), 
-			__( 'Simple Analytics by RP', 'rp-simple-analytics' ), 
+			__( 'Refined Practice - Simple Analytics Integration', 'rp-simple-analytics' ), 
+			__( 'RP Simple Analytics', 'rp-simple-analytics' ), 
 			'manage_options', 
 			'rp-simple-analytics', 
 			array(

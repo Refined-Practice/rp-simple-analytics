@@ -1,4 +1,4 @@
-# Simple Analytics Integration by Refined Practice
+# Refined Practice - Simple Analytics Integration
 
 This WordPress/ClassicPress plugin adds the code needed to use the Simple Analytics analytics service on your site. You can also choose to prevent logged in users from appearing in your analytics, add Simple Analytic's experimental event tracking code and view page views directly on your dashboard.
 

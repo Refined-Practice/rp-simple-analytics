@@ -1,4 +1,4 @@
-=== Simple Analytics Integration by Refined Practice ===
+=== Refined Practice - Simple Analytics Integration ===
 Contributors: Meester_Paul
 Donate link: 
 Tags: analytics, simple analytics

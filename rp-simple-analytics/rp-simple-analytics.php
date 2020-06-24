@@ -13,7 +13,7 @@
  * @package           RP_Simple_Analytics
  *
  * @wordpress-plugin
- * Plugin Name:       Simple Analytics Integration by Refined Practice
+ * Plugin Name:       Refined Practice - Simple Analytics Integration
  * Plugin URI:        https://www.refinedpractice.com/wordpress-plugins/
  * Description:       Embeds the Simple Analytics privacy friendly analytics service (see https://simpleanalytics.com/)
  * Version:           1.0.0
