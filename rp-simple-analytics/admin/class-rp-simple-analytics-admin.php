@@ -69,7 +69,7 @@ class RP_Simple_Analytics_Admin {
 	public function enqueue_scripts( $hook ) {
 
 		if ( 'index.php' === $hook ) {
-			wp_enqueue_script( $this->rp_simple_analytics . "_embed", 'https://scripts.simpleanalyticscdn.com/embed.js', array( ), '5115', true );
+			wp_enqueue_script( $this->rp_simple_analytics . "_embed", 'https://scripts.simpleanalyticscdn.com/embed.js', array( ), 'd2e8', true );
 		}
 		if ( 'settings_page_rp-simple-analytics' === $hook ) {
 			wp_enqueue_code_editor( array( 'type' => 'text/javascript' ) );

@@ -1,11 +1,11 @@
 === Refined Practice - Simple Analytics Integration ===
 Contributors: Meester_Paul
 Donate link: 
-Tags: analytics, simple analytics
+Tags: analytics, simple analytics, ClassicPress
 Requires at least: 4.9
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,6 +16,15 @@ Use the privacy respecting Simple Analytics service on your site without having 
 This plugin adds the code needed to use the Simple Analytics analytics service on your site. You can also choose to prevent logged in users from appearing in your analytics, add Simple Analytic's experimental event tracking code and view page views directly on your dashboard.
 
 **Note that use of Simple Analytics requires a subscription** Find out more on the [Simple Analytics website](https://simpleanalytics.com/).
+
+== Installation ==
+
+Any of the following methods should work, just choose what's best for your setup:
+
+* *Via your WordPress Dashboard Method 1:* Navigate to the `Plugins` page of your website, click `Add New`, search for `rp-simple-analytics` and click on `Install Now`. Once installed, activate the plugin from your `Plugins` page.
+* *Via your WordPress Dashboard Method 1:* Download the plugin zip file from its [WordPress.org plugin page](https://wordpress.org/plugins/rp-simple-analytics), navigate to the `Plugins` page of your website, click `Add New`, click on `Upload Plugin`, choose the zip file you just downloaded and click on `Install Now`. Once installed, activate the plugin from your `Plugins` page.
+* *Via [WP-CLI](https://wp-cli.org/):* At your command-line type `wp plugin install rp-simple-analytics --activate` 
+* *Manually:* Download the plugin zip file from its [WordPress.org plugin page](https://wordpress.org/plugins/rp-simple-analytics), unzip it and then upload the entire `rp-simple-analytics` folder into your plugins directory.  Once installed, activate the plugin from your website's `Plugins` page.
 
 == Frequently Asked Questions ==
 
@@ -38,6 +47,11 @@ Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Updated js script version numbers to match latest Simple Analytics release
+* Updated documentation
+
 
 = 1.0.0 =
 * First release.
