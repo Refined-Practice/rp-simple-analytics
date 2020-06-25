@@ -52,10 +52,12 @@ Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com
 
 == Changelog ==
 
+= 1.0.2 =
+* Added screenshots to documentation
+
 = 1.0.1 =
 * Updated js script version numbers to match latest Simple Analytics release
 * Updated documentation
-
 
 = 1.0.0 =
 * First release.
