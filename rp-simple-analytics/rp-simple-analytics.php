@@ -16,7 +16,7 @@
  * Plugin Name:       Refined Practice - Simple Analytics Integration
  * Plugin URI:        https://www.refinedpractice.com/wordpress-plugins/
  * Description:       Embeds the Simple Analytics privacy friendly analytics service (see https://simpleanalytics.com/)
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Refined Practice
  * Author URI:        https://www.refinedpractice.com/
  * License:           GPL-2.0+
@@ -31,11 +31,11 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Currently plugin version.
+ * Current plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'RP_SIMPLE_ANALYTICS_VERSION', '1.0.0' );
+define( 'RP_SIMPLE_ANALYTICS_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
