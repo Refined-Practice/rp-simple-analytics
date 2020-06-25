@@ -31,6 +31,13 @@ This plugin offers more features than the official Simple Analytics plugin, in p
 
 Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com/).
 
+## Screenshots
+
+### Dashboard widget
+![Dashboard widget](https://www.refinedpractice.com/wp-content/uploads/2020/06/rp-simple-analytics-screenshot-dashboard.png)
+
+### Settings page
+![Settings page](https://www.refinedpractice.com/wp-content/uploads/2020/06/rp-simple-analytics-screenshot-settings-page.png)
 
 ## License
 

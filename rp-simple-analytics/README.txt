@@ -45,6 +45,10 @@ This plugin offers more features than the official Simple Analytics plugin, in p
 
 Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com/).
 
+== Screenshots ==
+
+1. The dashboard widget
+2. Settings page
 
 == Changelog ==
 
