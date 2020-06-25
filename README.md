@@ -45,6 +45,9 @@ This plugin is licensed under the GPL v2 or later.
 
 ## Changelog
 
+### 1.0.2
+* Added screenshots to documentation
+
 ### 1.0.1
 * Updated js script version numbers to match latest Simple Analytics release
 * Updated documentation
