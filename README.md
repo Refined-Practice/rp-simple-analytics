@@ -34,10 +34,10 @@ Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com
 ## Screenshots
 
 ### Dashboard widget
-![Dashboard widget](https://www.refinedpractice.com/wp-content/uploads/2020/06/rp-simple-analytics-screenshot-dashboard.png)
+![Dashboard widget](https://raw.githubusercontent.com/Refined-Practice/rp-simple-analytics/master/assets/screenshot-1.png)
 
 ### Settings page
-![Settings page](https://www.refinedpractice.com/wp-content/uploads/2020/06/rp-simple-analytics-screenshot-settings-page.png)
+![Settings page](https://raw.githubusercontent.com/Refined-Practice/rp-simple-analytics/master/assets/screenshot-2.png)
 
 ## License
 
