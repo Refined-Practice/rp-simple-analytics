@@ -69,7 +69,7 @@ class RP_Simple_Analytics_Cli {
 	 *
 	 *     # Display RP Simple Analytics version.
 	 *     $ wp rpsa version
-	 *     1.0.2
+	 *     1.1.0
 	 */
 	public function version() {
 		WP_CLI::log( $this->version );
