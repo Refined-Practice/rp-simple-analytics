@@ -186,6 +186,11 @@ class RP_Simple_Analytics {
 		if ( get_option( 'rpsa_dashboard_widget' ) ) {
 			$this->loader->add_action( 'wp_dashboard_setup', $plugin_admin, 'add_dashboard_widget' );
 		}
+		$this->loader->add_action( 'admin_notices', $plugin_admin, 'display_activation_notice' );
+
+		$main_plugin_file = strtok( plugin_basename(__FILE__), '/' ) . '/' . $this->rp_simple_analytics . '.php';
+		$this->loader->add_filter( 'plugin_action_links_' . $main_plugin_file, $plugin_admin, 'add_action_links' );
+
 	}
 
 	/**

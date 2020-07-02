@@ -221,7 +221,7 @@ class RP_Simple_Analytics_Admin {
 		);		
 		add_settings_field(
 			'rpsa-events-extra-js', 
-			__( 'Additional javascript for inclusion ( rendered via <code>wp_footer</code> )', 'rp-simple-analytics' ), 
+			__( 'Additional javascript for inclusion (rendered in your footer via <code>wp_add_inline_script</code>). Do not include <code>&lt;script&gt;</code> tags.', 'rp-simple-analytics' ), 
 			array( $this, 'events_extra_js' ), 
 			'rp-simple-analytics', 
 			'rpsa-events', 
@@ -489,6 +489,45 @@ class RP_Simple_Analytics_Admin {
 
 
 	}
+
+
+	/**
+	* Plugin action links
+	*
+	* @since    1.1.0
+	*/
+	public function add_action_links( $links ) {
+		$additional_links = array(
+ 			'<a href="' . admin_url( 'options-general.php?page=' . $this->rp_simple_analytics ) . '">Settings</a>',
+ 		);
+		return array_merge( $links, $additional_links );
+	}
+
+
+	/**
+	* Activation notice
+	*
+	* @since    1.1.0
+	*/
+	public function display_activation_notice( ) {
+		// See https://stackoverflow.com/questions/38233751/show-message-after-activating-wordpress-plugin
+	    if( get_transient( 'rpsa_activation_notice' ) ){
+	    	/* translators: %s: Link to RP Simple Analytics settings page */
+	    	$content = sprintf(
+				/* translators: 1: Link to Simple Analytics home/dashboard page 2: Refined Practice Simple Analytics Referral link 3: Link to RP Simple Analytics settings page */
+				__( 'RP Simple Analytics is now active. If you already have a Simple Analytics subscription then make sure that you <a href="%1$s" target="_blank">add this site to your Simple Analytics dashboard</a>. If you do not have a subscription yet please consider supporting this plugin by signing up through our <a href="%2$s" target="_blank">referral link</a>, you will also get one month for free! You can <a href="%3$s">adjust this plugin\'s settings here</a>.'  , 'rp-simple-analytics' ), 
+					'https://simpleanalytics.com/',
+					'https://referral.simpleanalytics.com/refined-practice',
+					admin_url( 'options-general.php?page=' . $this->rp_simple_analytics )
+				);
+			?>
+			<div class="updated notice is-dismissible">
+				<p><?php echo $content;?></p>
+			</div>
+			<?php
+			delete_transient( 'rpsa_activation_notice' );
+		}
+    }
 
 
 

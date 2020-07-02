@@ -102,11 +102,11 @@ class RP_Simple_Analytics_Cli {
 	public function user_block( $args ) {
 		$type = 'line';
 		list( $toggle ) = $args;
-		if( 'on' === $toggle ){
+		if( 'on' === $toggle ) {
 			update_option( 'rpsa_block_logged_in_users', '1' );	
 			$type = 'success';
 		}
-		if( 'off' === $toggle ){
+		if( 'off' === $toggle ) {
 			update_option( 'rpsa_block_logged_in_users', false );
 			$type = 'success';
 		}
@@ -193,11 +193,11 @@ class RP_Simple_Analytics_Cli {
 	public function event_tracking( $args ) {
 		$type = 'line';
 		list( $toggle ) = $args;
-		if( 'on' === $toggle ){
+		if( 'on' === $toggle ) {
 			update_option( 'rpsa_events', '1' );
 			$type = 'success';	
 		}
-		if( 'off' === $toggle ){
+		if( 'off' === $toggle ) {
 			update_option( 'rpsa_events', false );
 			$type = 'success';	
 		}
@@ -237,11 +237,11 @@ class RP_Simple_Analytics_Cli {
 	public function jquery_enqueue( $args ) {
 		$type = 'line';
 		list( $toggle ) = $args;
-		if( 'on' === $toggle ){
+		if( 'on' === $toggle ) {
 			update_option( 'rpsa_events_jquery', '1' );
 			$type = 'success';
 		}
-		if( 'off' === $toggle ){
+		if( 'off' === $toggle ) {
 			update_option( 'rpsa_events_jquery', false );
 			$type = 'success';	
 		}
@@ -343,11 +343,11 @@ class RP_Simple_Analytics_Cli {
 	public function dashboard_widget( $args ) {
 		$type = 'line';
 		list( $toggle ) = $args;
-		if( 'on' === $toggle ){
+		if( 'on' === $toggle ) {
 			update_option( 'rpsa_dashboard_widget', '1' );
 			$type = 'success';
 		}
-		if( 'off' === $toggle ){
+		if( 'off' === $toggle ) {
 			update_option( 'rpsa_dashboard_widget', false );
 			$type = 'success';
 		}

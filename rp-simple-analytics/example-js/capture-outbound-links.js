@@ -1,3 +1,4 @@
+// Example only, you will probably want to customise this! See https://docs.simpleanalytics.com/capture-outbound-links
 (function saInitializeLinkCapture(window) {
   var log = function (message, type) {
     var logger = type === "warn" ? console.warn : console.log;

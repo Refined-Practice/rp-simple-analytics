@@ -48,6 +48,10 @@ class RP_Simple_Analytics_Activator {
 		if ( ! get_option( 'rpsa_block_at_capability' ) ) {
 			add_option( 'rpsa_block_at_capability', 'publish_pages' );
 		}
+
+		// See https://stackoverflow.com/questions/38233751/show-message-after-activating-wordpress-plugin
+		set_transient( 'rpsa_activation_notice', true, 360 );
+
 	}
 
 }
