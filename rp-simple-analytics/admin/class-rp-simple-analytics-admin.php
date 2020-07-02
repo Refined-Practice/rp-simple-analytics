@@ -380,7 +380,7 @@ class RP_Simple_Analytics_Admin {
 	* @since    1.0.0
 	*/
 	public function events_extra_js( ) {
-		echo '<textarea id="rpsa-events-extra-js" rows="5" name="rpsa_events_extra_js" class="textarea">' . wp_unslash( get_option( 'rpsa_events_extra_js' ) ) . '</textarea>';
+		echo '<textarea id="rpsa-events-extra-js" rows="5" name="rpsa_events_extra_js" class="textarea">' . get_option( 'rpsa_events_extra_js' ) . '</textarea>';
 	}
 
 

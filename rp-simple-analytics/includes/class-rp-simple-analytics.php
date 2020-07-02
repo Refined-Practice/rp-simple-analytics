@@ -92,6 +92,9 @@ class RP_Simple_Analytics {
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
+			$this->register_cli_commands();
+		}
 		$this->define_public_hooks();
 
 	}
@@ -130,6 +133,13 @@ class RP_Simple_Analytics {
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-rp-simple-analytics-admin.php';
+
+		/**
+		 * The class responsible for defining WP-CLI commands
+		 */
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-rp-simple-analytics-cli.php';
+		}
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
@@ -176,6 +186,19 @@ class RP_Simple_Analytics {
 		if ( get_option( 'rpsa_dashboard_widget' ) ) {
 			$this->loader->add_action( 'wp_dashboard_setup', $plugin_admin, 'add_dashboard_widget' );
 		}
+	}
+
+	/**
+	 * Register WP-CLI commands
+	 *
+	 * @since    1.1.0
+	 * @access   private
+	 */
+	private function register_cli_commands() {
+
+		$plugin_cli = new RP_Simple_Analytics_Cli( $this->get_rp_simple_analytics(), $this->get_version(), $this->get_block_at_capability() );
+		WP_CLI::add_command( 'rpsa', $plugin_cli );
+
 	}
 
 	/**

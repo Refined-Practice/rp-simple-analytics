@@ -18,7 +18,6 @@ Any of the following methods should work, just choose what's best for your setup
 
 No, this plugin was created by [Refined Practice](https://www.refinedpractice.com/).
 
-
 ### How does this differ from the official Simple Analytics plugin 
 
 This plugin offers more features than the official Simple Analytics plugin, in particular:
@@ -30,6 +29,10 @@ This plugin offers more features than the official Simple Analytics plugin, in p
 ### Do I need a subscription 
 
 Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com/).
+
+## WP-CLI
+
+This plugin fully supports command-line integration via [WP-CLI](https://wp-cli.org/). Type `wp rpsa` at the command-line for details.
 
 ## Screenshots
 
@@ -43,7 +46,15 @@ Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com
 
 This plugin is licensed under the GPL v2 or later.
 
+## Credits
+
+This plugin was developed using the excellent [WordPress Plugin Boilerplate Generator](https://wppb.me/) which you can also find on [GitHub](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate).
+
 ## Changelog
+
+### 1.1.0
+* ADDED FEATURE: [WP-CLI](https://wp-cli.org/) support. Type `wp rpsa` at the command-line for details
+* BUG FIX: Incorrect escaping of additional events javascript
 
 ### 1.0.2
 * Added screenshots to documentation

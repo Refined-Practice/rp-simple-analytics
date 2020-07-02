@@ -84,7 +84,7 @@ class RP_Simple_Analytics_Public {
 		}
 
 		if ( ! ( get_option( 'rpsa_block_logged_in_users' ) && current_user_can( $this->block_at_capability ) ) && trim(get_option( 'rpsa_events_extra_js' ) ) && get_option( 'rpsa_events' ) ) {
-			wp_add_inline_script( $this->rp_simple_analytics, wp_unslash( get_option('rpsa_events_extra_js') ) );
+			wp_add_inline_script( $this->rp_simple_analytics, get_option('rpsa_events_extra_js') );
 		}
 
 

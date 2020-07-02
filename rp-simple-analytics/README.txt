@@ -5,7 +5,7 @@ Tags: analytics, simple analytics, ClassicPress
 Requires at least: 4.9
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,14 +17,10 @@ This plugin adds the code needed to use the Simple Analytics analytics service o
 
 **Note that use of Simple Analytics requires a subscription** Find out more on the [Simple Analytics website](https://simpleanalytics.com/).
 
-== Installation ==
+== Screenshots ==
 
-Any of the following methods should work, just choose what's best for your setup:
-
-* *Via your WordPress Dashboard Method 1:* Navigate to the `Plugins` page of your website, click `Add New`, search for `rp-simple-analytics` and click on `Install Now`. Once installed, activate the plugin from your `Plugins` page.
-* *Via your WordPress Dashboard Method 1:* Download the plugin zip file from its [WordPress.org plugin page](https://wordpress.org/plugins/rp-simple-analytics), navigate to the `Plugins` page of your website, click `Add New`, click on `Upload Plugin`, choose the zip file you just downloaded and click on `Install Now`. Once installed, activate the plugin from your `Plugins` page.
-* *Via [WP-CLI](https://wp-cli.org/):* At your command-line type `wp plugin install rp-simple-analytics --activate` 
-* *Manually:* Download the plugin zip file from its [WordPress.org plugin page](https://wordpress.org/plugins/rp-simple-analytics), unzip it and then upload the entire `rp-simple-analytics` folder into your plugins directory.  Once installed, activate the plugin from your website's `Plugins` page.
+1. The dashboard widget
+2. Settings page
 
 == Frequently Asked Questions ==
 
@@ -45,12 +41,37 @@ This plugin offers more features than the official Simple Analytics plugin, in p
 
 Yes, find out more on the [Simple Analytics website](https://simpleanalytics.com/).
 
-== Screenshots ==
+== WP-CLI ==
 
-1. The dashboard widget
-2. Settings page
+This plugin fully supports command-line integration via [WP-CLI](https://wp-cli.org/). Type `wp rpsa` at the command-line for details.
+
+== Get Involved ==
+
+You can report issues, request features and fork the code for this plugin on [GitHub](https://github.com/Refined-Practice/rp-simple-analytics).
+
+== Credits ==
+
+This plugin was developed using the excellent [WordPress Plugin Boilerplate Generator](https://wppb.me/) which you can also find on [GitHub](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate).
+
+== Installation ==
+
+Any of the following methods should work, just choose what's best for your setup:
+
+* *Via your WordPress Dashboard Method 1:* Navigate to the `Plugins` page of your website, click `Add New`, search for `rp-simple-analytics` and click on `Install Now`. Once installed, activate the plugin from your `Plugins` page.
+* *Via your WordPress Dashboard Method 1:* Download the plugin zip file from its [WordPress.org plugin page](https://wordpress.org/plugins/rp-simple-analytics), navigate to the `Plugins` page of your website, click `Add New`, click on `Upload Plugin`, choose the zip file you just downloaded and click on `Install Now`. Once installed, activate the plugin from your `Plugins` page.
+* *Via [WP-CLI](https://wp-cli.org/):* At your command-line type `wp plugin install rp-simple-analytics --activate` 
+* *Manually:* Download the plugin zip file from its [WordPress.org plugin page](https://wordpress.org/plugins/rp-simple-analytics), unzip it and then upload the entire `rp-simple-analytics` folder into your plugins directory.  Once installed, activate the plugin from your website's `Plugins` page.
+
+== Upgrade Notice ==
+
+= 1.1.0 =
+Version 1.1.0 fixes a bug with the escaping of additional events javascript and adds support for working on the command-line with WP-CLI.
 
 == Changelog ==
+
+= 1.1.0 =
+* ADDED FEATURE: [WP-CLI](https://wp-cli.org/) support. Type `wp rpsa` at the command-line for details
+* BUG FIX: Incorrect escaping of additional events javascript
 
 = 1.0.2 =
 * Added screenshots to documentation

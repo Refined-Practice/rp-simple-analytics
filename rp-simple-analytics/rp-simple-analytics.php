@@ -16,7 +16,7 @@
  * Plugin Name:       Refined Practice - Simple Analytics Integration
  * Plugin URI:        https://www.refinedpractice.com/wordpress-plugins/
  * Description:       Embeds the Simple Analytics privacy friendly analytics service (see https://simpleanalytics.com/)
- * Version:           1.0.2
+ * Version:           1.1.0
  * Author:            Refined Practice
  * Author URI:        https://www.refinedpractice.com/
  * License:           GPL-2.0+
