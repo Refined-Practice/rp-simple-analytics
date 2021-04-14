@@ -52,6 +52,12 @@ This plugin was developed using the excellent [WordPress Plugin Boilerplate Gene
 
 ## Changelog
 
+### 1.2.0
+* Updated example events javascript to use latest version of [automated events](https://docs.simpleanalytics.com/automated-events)
+* Updated event trigger js snippet to latest version
+* Updated `<noscript>` alternative snippet
+* Tested up to WordPress 5.7
+
 ### 1.1.0
 * ADDED FEATURE: [WP-CLI](https://wp-cli.org/) support. Type `wp rpsa` at the command-line for details
 * BUG FIX: Incorrect escaping of additional events javascript
