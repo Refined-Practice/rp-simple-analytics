@@ -273,7 +273,7 @@ class RP_Simple_Analytics_Cli {
 	 *	   wp rpsa event-js
 	 *
 	 *     # include javascript from file (do not include <script> tags)
-	 *	   wp rpsa event-js --file='/path/to/plugins/rp-simple-analytics/example-js/capture-outbound-links.js'
+	 *	   wp rpsa event-js --file='/path/to/plugins/rp-simple-analytics/example-js/automated-events.js'
 	 *
 	 *     # include javascript from STDIN (do not include <script> tags)
 	 *	   wp rpsa event-js --js='console.log("Hello!")'

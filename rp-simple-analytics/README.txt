@@ -3,9 +3,9 @@ Contributors: Meester_Paul
 Donate link: 
 Tags: analytics, simple analytics, ClassicPress
 Requires at least: 4.9
-Tested up to: 5.4
+Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,10 +64,16 @@ Any of the following methods should work, just choose what's best for your setup
 
 == Upgrade Notice ==
 
-= 1.1.0 =
-Version 1.1.0 fixes a bug with the escaping of additional events javascript and adds support for working on the command-line with WP-CLI.
+= 1.2.0 =
+Version 1.2.0 updates the event trigger code and includes an improved example automated event tracking script.
 
 == Changelog ==
+
+= 1.2.0 =
+* Updated example events javascript to use latest version of [automated events](https://docs.simpleanalytics.com/automated-events)
+* Updated event trigger js snippet to latest version
+* Updated `<noscript>` alternative snippet
+* Tested up to WordPress 5.7
 
 = 1.1.0 =
 * ADDED FEATURE: [WP-CLI](https://wp-cli.org/) support. Type `wp rpsa` at the command-line for details

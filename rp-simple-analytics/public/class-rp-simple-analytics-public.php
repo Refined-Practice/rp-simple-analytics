@@ -79,7 +79,7 @@ class RP_Simple_Analytics_Public {
 		}
 
 		if ( ! ( get_option( 'rpsa_block_logged_in_users' ) && current_user_can( $this->block_at_capability ) ) ) {
-			wp_enqueue_script( $this->rp_simple_analytics, 'https://scripts.simpleanalyticscdn.com/latest.js', $dependencies, '06c6', true );
+			wp_enqueue_script( $this->rp_simple_analytics, 'https://scripts.simpleanalyticscdn.com/latest.js', $dependencies, '86df', true );
 
 		}
 
@@ -97,7 +97,7 @@ class RP_Simple_Analytics_Public {
 	 */
 	public function add_event_js() {
 		if ( ! ( get_option( 'rpsa_block_logged_in_users' ) && current_user_can( $this->block_at_capability ) ) ) {
-			echo "<script>window.sa_event=window.sa_event||function(){a=[].slice.call(arguments);sa_event.q?sa_event.q.push(a):sa_event.q=[a]};</script>";
+			echo "<script>window.sa_event=window.sa_event||function(event){sa_event.q?sa_event.q.push(event):sa_event.q=[event]}</script>";
 		}
 	}
 
@@ -128,7 +128,7 @@ class RP_Simple_Analytics_Public {
 		}
 
 		if( $handle === $noscript_script ) {
-			$tag .= '<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>' . "\n";
+			$tag .= '<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>' . "\n";
 		}
 
 
